@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | EazyCollab</title>
+
+  <!-- Link to Favicon -->
+  <link rel="icon" href="images/star.png" type="image/x-icon">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"> 
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-black border-gray-200 dark:bg-black">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo and Brand Name -->
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="images/EClogowhite.png" class="h-16" alt="Company Logo" />
+        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">EazyCollab</span> -->
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+    
+      <!-- Navigation Links -->
+      <div id="navbar" class="hidden w-full md:block md:w-auto bg-black">
+ 
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" aria-current="page"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Home</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="services.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+
+          
+        </ul>
+
+      </div>
+      
+     
+    </div>
+  </nav>
+
+
+ <!-- Hero Section -->
+<header class="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-center py-20 text-white bg-cover bg-center md:bg-contain sm:bg-cover">
+  <div class="py-20">
+    <h1 class="text-5xl font-extrabold tracking-wide animate__animated animate__fadeInDown animate__delay-1s">
+      Welcome to <span class="text-teal-300">EazyCollab</span>
+    </h1>
+
+    <p class="mt-6 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-2s">
+     Your Sales and Marketing partner for Fueling Business Expansion.
+    </p>
+    <div class="mt-8 animate__animated animate__zoomIn animate__delay-3s">
+      <a href="https://calendly.com/isaacrao/30min?month=2024-12" target="_blank"
+        class="inline-block px-8 py-3 text-lg font-semibold bg-white text-purple-600 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+        Book a Free Consultation
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Include Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <!-- About Us Section -->
+  <section class="bg-gradient-to-b from-white to-gray-100 py-20 text-gray-800" data-aos="fade-up">
+    <div class="py-20">
+      <div class="container mx-auto px-6 md:px-12 lg:px-20 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6"  data-aos="zoom-in" data-aos-duration="800">About Us</h2>
+        <p class="text-lg leading-relaxed max-w-3xl text-justify mx-auto" data-aos="fade-right" data-aos-delay="200">
+          At <span class="font-semibold text-teal-600">EazyCollab</span>, We're a results-driven digital marketing firm passionate about empowering businesses to achieve their full potential. Through a combination of innovative strategies, advanced tools, and personalized solutions, we specialize in generating high-quality prospects and delivering exceptional digital marketing services tailored to your unique needs.
+
+Our team of experts works closely with clients to craft data-driven campaigns that maximize visibility, engage target audiences, and drive sustainable growth. Whether it's through cutting-edge SEO, social media management, email marketing, or lead generation, we focus on delivering measurable results that fuel success and expansion for businesses across industries.
+
+At the heart of everything we do is a commitment to fostering long-term partnerships and helping our clients stay ahead in an ever-evolving digital landscape. Let us be your partner in building a stronger, more impactful online presence that drives meaningful outcomes.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-8">
+          <!-- Feature Cards -->
+          <div class="bg-white text-gray-800 shadow-lg rounded-lg p-6 w-80 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-xl font-semibold text-blue-600">Contact Discovery</h3>
+            <p class="mt-2">Effortlessly find the right contacts with our advanced research methods.</p>
+          </div>
+          <div class="bg-white text-gray-800 shadow-lg rounded-lg p-6 w-80 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-xl font-semibold text-blue-600">Lead Generation</h3>
+            <p class="mt-2">Generate high-quality leads to fuel your business growth.</p>
+          </div>
+          <div class="bg-white text-gray-800 shadow-lg rounded-lg p-6 w-80 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="text-xl font-semibold text-blue-600">Digital Marketing</h3>
+            <p class="mt-2">Elevate your online presence with SEO, SEM, and SMM services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--section how we work-->
+<div class="container mx-auto px-6 py-12 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white">
+  <div class="text-center mb-12">
+    <h1 class="text-5xl font-extrabold text-white" data-aos="fade-down" data-aos-delay="200">Our Approach</h1>
+    <h2 class="text-3xl font-bold text-blue-400 mt-4" data-aos="fade-up" data-aos-delay="400">The Way We Work</h2>
+  </div>
+
+  <!-- Steps Section -->
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+    <!-- Step 1 -->
+    <div class="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
+      <img src="images/exploration.png" alt="Step 1" class="w-16 h-16 mb-2 rounded">
+      <p class="text-sm font-medium">Understanding the business and setting up the ICPs</p>
+    </div>
+    <img src="images/right-arrow.png" alt="arrow" class="w-6 h-6 hidden sm:block" data-aos="zoom-in" data-aos-delay="300">
+
+    <!-- Step 2 -->
+    <div class="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="400">
+      <img src="images/client.png" alt="Step 2" class="w-16 h-16 mb-2 rounded">
+      <p class="text-sm font-medium">Preparing catchy and personalized messages for the ICPs</p>
+    </div>
+    <img src="images/right-arrow.png" alt="arrow" class="w-6 h-6 hidden sm:block" data-aos="zoom-in" data-aos-delay="500">
+
+    <!-- Step 3 -->
+    <div class="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="600">
+      <img src="images/email.png" alt="Step 3" class="w-16 h-16 mb-2 rounded">
+      <p class="text-sm font-medium">Prospecting and sending them messages/mails</p>
+    </div>
+    <img src="images/right-arrow.png" alt="arrow" class="w-6 h-6 hidden sm:block" data-aos="zoom-in" data-aos-delay="700">
+
+    <!-- Step 4 -->
+    <div class="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="800">
+      <img src="images/booking.png" alt="Step 4" class="w-16 h-16 mb-2 rounded">
+      <p class="text-sm font-medium">Setting up appointments with interested ICPs</p>
+    </div>
+  </div>
+
+  <!-- Detailed Process Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Process A -->
+    <div class="flex items-start" data-aos="fade-right" data-aos-delay="200">
+      <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 text-xl font-bold mr-4 rounded">
+        A
+      </div>
+      <p class="text-gray-300">First, we thoroughly comprehend our client's service or product. Based on this understanding, we craft Ideal Customer Profiles (ICPs) targeting customers perfectly suited for the offering.</p>
+    </div>
+
+    <!-- Process B -->
+    <div class="flex items-start" data-aos="fade-left" data-aos-delay="400">
+      <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 text-xl font-bold mr-4 rounded">
+        B
+      </div>
+      <p class="text-gray-300">Next, we develop engaging cold message templates tailored to the Ideal Customer Profiles (ICPs).</p>
+    </div>
+
+    <!-- Process C -->
+    <div class="flex items-start" data-aos="fade-right" data-aos-delay="600">
+      <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 text-xl font-bold mr-4 rounded">
+        C
+      </div>
+      <p class="text-gray-300">Then, we meticulously review the profiles and send personalized messages to the Ideal Customer Profiles (ICPs).</p>
+    </div>
+
+    <!-- Process D -->
+    <div class="flex items-start" data-aos="fade-left" data-aos-delay="800">
+      <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 text-xl font-bold mr-4 rounded">
+        D
+      </div>
+      <p class="text-gray-300">If a customer responds, we proceed to schedule an appointment and arrange a call with our clients.</p>
+    </div>
+  </div>
+</div>
+
+<!--end-->
+
+<!-- What Makes Us Different Section -->
+<section class="py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+    <!-- Banner Section -->
+    <div class="relative">
+      <div class="tenor-gif-embed" data-postid="14809149" data-share-method="host" data-aspect-ratio="1.5311" data-width="100%">
+        <a href="https://tenor.com/view/superman-fly-up-up-and-away-gif-14809149">Superman Fly GIF</a> from 
+        <a href="https://tenor.com/search/superman-gifs">Superman GIFs</a>
+      </div> 
+      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <h1 class="text-white text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight text-center px-4">
+          What Makes Us Different?
+        </h1>
+      </div>
+    </div>
+    <!-- Content Section -->
+    <div class="p-6 sm:p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <!-- Text Section -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800 leading-relaxed">
+          Driving Appointments to Closure: Our Proactive Approach
+        </h2>
+        <p class="text-base sm:text-lg text-gray-600 mb-4">
+          At EazyCollab, we don’t just schedule appointments. With over 13 years of sales expertise, we proactively move leads through the qualification process, guiding them toward successful closures with precision.
+        </p>
+        <p class="text-base sm:text-lg text-gray-600">
+          We ensure every step is optimized for maximum impact, so you can focus on what matters most: growing your business.
+        </p>
+      </div>
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2">
+        <img src="images/geometric.png" alt="Geometric Illustration" class="w-full h-auto rounded-lg shadow-md">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of What Makes Us Different Section -->
+
+  <!-- Clients Section -->
+<section class="bg-gray-100 py-16" data-aos="fade-up">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800" data-aos="zoom-in" data-aos-duration="800">Our Trusted Clients</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Client 1 -->
+      <div class="flex justify-center items-center p-4 bg-white shadow-md rounded-lg transform transition hover:scale-105" data-aos="flip-left" data-aos-delay="200">
+        <img src="images/clients/codersque.jpg" alt="Client 1" class="h-20 w-20 object-contain" data-aos="zoom-in">
+      </div>
+
+      <!-- Client 2 -->
+      <div class="flex justify-center items-center p-4 bg-white shadow-md rounded-lg transform transition hover:scale-105" data-aos="flip-up" data-aos-delay="400">
+        <img src="images/clients/nutrigo.jpg" alt="Client 2" class="h-20 w-20 object-contain" data-aos="zoom-in">
+      </div>
+
+      <!-- Client 3 -->
+      <div class="flex justify-center items-center p-4 bg-white shadow-md rounded-lg transform transition hover:scale-105" data-aos="flip-right" data-aos-delay="600">
+        <img src="images/clients/peerbie logo.png" alt="Client 3" class="h-20 w-20 object-contain" data-aos="zoom-in">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <div class="w-full h-full dark:bg-gray-900">
+
+   <!-- Footer -->
+<footer class="w-full h-fit bg-black text-white mt-auto" data-aos="fade-up">
+  <div class="w-full mx-auto sm:px-10 px-4 pb-10">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 justify-items-start pt-12">
+     <!-- col 1 -->
+<div class="mt-4" data-aos="fade-right" data-aos-delay="100">
+  <h1 class="text-3xl font-semibold font-[Poppins] mb-6">Get In Touch</h1>
+  <ul class="text-base text-gray-400 font-medium flex flex-col gap-4">
+    <li class="flex items-center gap-3">
+  <ion-icon class="text-2xl text-gray-600" name="location"></ion-icon>
+  <p class="text-sm">27A Puberan Path, Panjabari, Guwahati-03, India</p>
+</li>
+
+    <li class="flex items-center gap-3">
+      <ion-icon class="text-2xl text-gray-600" name="call"></ion-icon>
+      <p class="text-sm	">+91-9362313574, +91-6033160309</p>
+    </li>
+    <li class="flex items-center gap-3">
+      <ion-icon class="text-2xl text-gray-600" name="mail"></ion-icon>
+      <p class="text-sm	">isaac@eazycollab.in</p>
+    </li>
+  </ul>
+  <div class="flex gap-4 items-center text-white mt-6">
+      
+    <a href="https://www.instagram.com/eazycollab/" target="_blank">
+    <div class="flex items-center justify-center p-3 border border-gray-500 rounded-full transition-all hover:bg-gray-700" data-aos="zoom-in" data-aos-delay="300">
+    <ion-icon class="text-xl" name="logo-instagram"></ion-icon>
+    </div>
+    </a>
+    
+    <a href="https://wa.me/+919362313574" target="_blank">
+    <div class="flex items-center justify-center p-3 border border-gray-500 rounded-full transition-all hover:bg-gray-700" data-aos="zoom-in" data-aos-delay="400">
+    <ion-icon class="text-xl" name="logo-whatsapp"></ion-icon>
+    </div>
+    </a>
+    
+    <a href="https://www.linkedin.com/company/eazy-collab" target="_blank">
+    <div class="flex items-center justify-center p-3 border border-gray-500 rounded-full transition-all hover:bg-gray-700" data-aos="zoom-in" data-aos-delay="500">
+    <ion-icon class="text-xl" name="logo-linkedin"></ion-icon>
+    </div>
+    </a>
+    
+  </div>
+</div>
+
+
+      <!-- col 2 -->
+      <div class="mt-4" data-aos="fade-up" data-aos-delay="150">
+        <h2 class="text-3xl font-semibold font-display mb-6">Quick Links</h2>
+        <ul class="mt-4 text-lg font-medium text-gray-400">
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="about.html">About Us</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="contact.html">Contact Us</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="services.html">Our Services</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="#">Privacy Policy</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="#">Terms & Conditions</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- col 3 - Our Services -->
+      <div class="mt-4" data-aos="fade-left" data-aos-delay="200">
+        <h2 class="text-3xl font-semibold font-display mb-6">Our Services</h2>
+        <ul class="text-lg font-medium text-gray-400">
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Data Mining</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>B2B Lead Generation</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Appointment Setting</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Digital Marketing</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Social Media Marketing</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Content Writing</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- col 4 - Blog Section -->
+      <div class="w-full mt-4 lg:pl-6" data-aos="zoom-in" data-aos-delay="250">
+        <h4 class="text-3xl font-semibold font-display mb-6">Blog</h4>
+        <p class="text-lg text-gray-400 font-medium mb-7">Check out our latest articles</p>
+        <div class="w-full space-y-4">
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="text-lg text-gray-200 hover:text-white transition-all">The Future of Digital Marketing in 2024</a>
+            <p class="text-sm text-gray-500">Explore the emerging trends in the world of digital marketing...</p>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="text-lg text-gray-200 hover:text-white transition-all">How to Set Effective Appointments</a>
+            <p class="text-sm text-gray-500">Tips and tools to help you streamline your appointment setting process...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="bg-gray-600 mt-14" data-aos="fade-in" />
+
+    <div class="w-full flex sm:flex-row gap-2 flex-col items-center justify-between py-4" data-aos="fade-up" data-aos-delay="300">
+      <div>
+        &copy;EazyCollab-All Rights Reserved
+      </div>
+      <div class="flex items-center justify-center space-x-4 mt-4 sm:mt-0">
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">Home</a>
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">Cookies</a>
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">Help</a>
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">FAQs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+<!-- Include AOS Library -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration
+    easing: 'ease-in-out', // Easing function
+    once: true, // Whether animation should happen only once
+  });
+</script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

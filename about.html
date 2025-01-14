@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | EazyCollab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Link to Favicon -->
+  <link rel="icon" href="images/star.png" type="image/x-icon">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ 
+   <script>
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true,     // whether animation should happen only once
+    });
+  </script>
+
+ <!-- Navbar -->
+<nav class="bg-black border-gray-200 dark:bg-black">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <!-- Logo and Brand Name -->
+    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="images/EClogowhite.png" class="h-16" alt="Company Logo" />
+      <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">EazyCollab</span> -->
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+    
+    
+
+    <!-- Navigation Links -->
+    <div id="navbar" class="hidden w-full md:block md:w-auto bg-black">
+      <ul
+        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="index.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+        </li>
+        <li>
+          <a href="about.html" aria-current="page"
+            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">About</a>
+        </li>
+        <li>
+          <a href="services.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- why choose us -->
+<div class="max-w-4xl mx-auto p-8 bg-white shadow-md rounded-lg py-16" data-aos="fade-up">
+  <div class="text-center mb-8">
+    <h1 class="text-3xl font-bold text-blue-900" data-aos="fade-down">EazyCollab - Why Choose Us?</h1>
+    <p class="text-gray-700 mt-2" data-aos="fade-up">We are not just a service-based firm but your <span class="text-blue-600 font-semibold">partner and an extended arm for B2B lead generation</span>.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Section 1 -->
+    <div class="flex items-start" data-aos="fade-right">
+      <div class="flex-shrink-0">
+        <div class="p-3 bg-blue-100 rounded-full">
+          <img src="images/about/database.png" alt="Database Icon" class="w-6 h-6">
+        </div>
+      </div>
+      <div class="ml-4">
+        <h2 class="text-xl font-semibold text-gray-800">Effective Database Management</h2>
+        <p class="mt-2 text-gray-600">We prioritize maintaining a proper database to ensure that your information is organized and easily accessible, facilitating other operations and decision-making processes.</p>
+      </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="flex items-start" data-aos="fade-left">
+      <div class="flex-shrink-0">
+        <div class="p-3 bg-blue-100 rounded-full">
+          <img src="images/about/reports.png" alt="Reports Icon" class="w-6 h-6">
+        </div>
+      </div>
+      <div class="ml-4">
+        <h2 class="text-xl font-semibold text-gray-800">Timely Reports with Transparency</h2>
+        <p class="mt-2 text-gray-600">Our commitment to providing timely reports coupled with transparency ensures that you are always informed about the progress and performance of your projects.</p>
+      </div>
+    </div>
+    <!-- Section 3 -->
+    <div class="flex items-start" data-aos="fade-right">
+      <div class="flex-shrink-0">
+        <div class="p-3 bg-blue-100 rounded-full">
+          <img src="images/about/chatbot.png" alt="Trends Icon" class="w-6 h-6">
+        </div>
+      </div>
+      <div class="ml-4">
+        <h2 class="text-xl font-semibold text-gray-800">Latest Trends and Strategies</h2>
+        <p class="mt-2 text-gray-600">We continuously stay abreast of the latest trends and strategies in the industry, ensuring that we implement cutting-edge techniques to maximize your success.</p>
+      </div>
+    </div>
+    <!-- Section 4 -->
+    <div class="flex items-start" data-aos="fade-left">
+      <div class="flex-shrink-0">
+        <div class="p-3 bg-blue-100 rounded-full">
+          <img src="images/about/reach.png" alt="Outreach Icon" class="w-6 h-6">
+        </div>
+      </div>
+      <div class="ml-4">
+        <h2 class="text-xl font-semibold text-gray-800">Targeted Customer Outreach</h2>
+        <p class="mt-2 text-gray-600">Our strategies are geared towards effectively reaching and engaging with your target customers, ensuring optimal results and meaningful interactions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of why choose us -->
+
+
+ <!-- Team Section -->
+<div class="font-sans py-16 bg-gradient-to-r from-indigo-500 to-blue-500">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <!-- Title Section with Background -->
+      <h2 class="text-4xl font-extrabold text-white mb-6" data-aos="fade-up" data-aos-delay="100">Meet Our Team</h2>
+      <!-- Description Section with Background -->
+      <p class="text-lg text-white mb-12" data-aos="fade-up" data-aos-delay="300">We are a group of passionate individuals dedicated to making a difference in the industry.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Card 1 -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+        <img src="images/team/isaac.jpeg" alt="Isaac" class="w-full h-64 object-cover object-top"/>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Isaac</h3>
+          <p class="text-gray-500">CEO</p>
+        </div>
+      </div>
+
+      <!--  Card 2 -->
+      
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="700">
+        <img src="images/team/rahul1.jpg" alt="rahul" class="w-full h-64 object-cover object-top"/>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Rahul</h3>
+          <p class="text-gray-500">VP of Technology</p>
+        </div>
+      </div>
+    
+
+      <!-- Card 3 (Uncomment to use) -->
+      <!--
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="900">
+        <img src="images/team/alice.jpeg" alt="Alice Johnson" class="w-full h-64 object-cover object-top"/>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Alice Johnson</h3>
+          <p class="text-gray-500">CFO</p>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+<!-- End of Team Section -->
+
+
+
+  <div class="w-full h-full dark:bg-gray-900">
+
+   <!-- Footer -->
+<footer class="w-full h-fit bg-black text-white mt-auto" data-aos="fade-up">
+  <div class="w-full mx-auto sm:px-10 px-4 pb-10">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 justify-items-start pt-12">
+     <!-- col 1 -->
+<div class="mt-4" data-aos="fade-right" data-aos-delay="100">
+  <h1 class="text-3xl font-semibold font-[Poppins] mb-6">Get In Touch</h1>
+  <ul class="text-base text-gray-400 font-medium flex flex-col gap-4">
+    <li class="flex items-center gap-3">
+  <ion-icon class="text-2xl text-gray-600" name="location"></ion-icon>
+  <p class="text-sm">27A Puberan Path, Panjabari, Guwahati-03, India</p>
+</li>
+
+    <li class="flex items-center gap-3">
+      <ion-icon class="text-2xl text-gray-600" name="call"></ion-icon>
+      <p class="text-sm	">+91-9362313574, +91-6033160309</p>
+    </li>
+    <li class="flex items-center gap-3">
+      <ion-icon class="text-2xl text-gray-600" name="mail"></ion-icon>
+      <p class="text-sm	">isaac@eazycollab.in</p>
+    </li>
+  </ul>
+  <div class="flex gap-4 items-center text-white mt-6">
+      
+    <a href="https://www.instagram.com/eazycollab/" target="_blank">
+    <div class="flex items-center justify-center p-3 border border-gray-500 rounded-full transition-all hover:bg-gray-700" data-aos="zoom-in" data-aos-delay="300">
+    <ion-icon class="text-xl" name="logo-instagram"></ion-icon>
+    </div>
+    </a>
+    
+    <a href="https://wa.me/+919362313574" target="_blank">
+    <div class="flex items-center justify-center p-3 border border-gray-500 rounded-full transition-all hover:bg-gray-700" data-aos="zoom-in" data-aos-delay="400">
+    <ion-icon class="text-xl" name="logo-whatsapp"></ion-icon>
+    </div>
+    </a>
+    
+    <a href="https://www.linkedin.com/company/eazy-collab" target="_blank">
+    <div class="flex items-center justify-center p-3 border border-gray-500 rounded-full transition-all hover:bg-gray-700" data-aos="zoom-in" data-aos-delay="500">
+    <ion-icon class="text-xl" name="logo-linkedin"></ion-icon>
+    </div>
+    </a>
+  
+  </div>
+</div>
+
+
+      <!-- col 2 -->
+      <div class="mt-4" data-aos="fade-up" data-aos-delay="150">
+        <h2 class="text-3xl font-semibold font-display mb-6">Quick Links</h2>
+        <ul class="mt-4 text-lg font-medium text-gray-400">
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="about.html">About Us</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="contact.html">Contact Us</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="services.html">Our Services</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="#">Privacy Policy</a>
+          </li>
+          <li class="flex items-center text-xl mt-2 hover:text-white transition-all">
+            <b><ion-icon name="chevron-forward-outline"></ion-icon></b><a href="#">Terms & Conditions</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- col 3 - Our Services -->
+      <div class="mt-4" data-aos="fade-left" data-aos-delay="200">
+        <h2 class="text-3xl font-semibold font-display mb-6">Our Services</h2>
+        <ul class="text-lg font-medium text-gray-400">
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Data Mining</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>B2B Lead Generation</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Appointment Setting</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Digital Marketing</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Social Media Marketing</p>
+          </li>
+          <li class="flex items-center gap-2 mt-2">
+            <ion-icon class="text-2xl" name="checkmark-circle"></ion-icon>
+            <p>Content Writing</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- col 4 - Blog Section -->
+      <div class="w-full mt-4 lg:pl-6" data-aos="zoom-in" data-aos-delay="250">
+        <h4 class="text-3xl font-semibold font-display mb-6">Blog</h4>
+        <p class="text-lg text-gray-400 font-medium mb-7">Check out our latest articles</p>
+        <div class="w-full space-y-4">
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="text-lg text-gray-200 hover:text-white transition-all">The Future of Digital Marketing in 2024</a>
+            <p class="text-sm text-gray-500">Explore the emerging trends in the world of digital marketing...</p>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="text-lg text-gray-200 hover:text-white transition-all">How to Set Effective Appointments</a>
+            <p class="text-sm text-gray-500">Tips and tools to help you streamline your appointment setting process...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="bg-gray-600 mt-14" data-aos="fade-in" />
+
+    <div class="w-full flex sm:flex-row gap-2 flex-col items-center justify-between py-4" data-aos="fade-up" data-aos-delay="300">
+      <div>
+        &copy;EazyCollab-All Rights Reserved
+      </div>
+      <div class="flex items-center justify-center space-x-4 mt-4 sm:mt-0">
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">Home</a>
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">Cookies</a>
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">Help</a>
+        <a href="#" class="text-sm text-gray-400 hover:text-white transition-all">FAQs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script>
+    // Ensure AOS is initialized properly after the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 1000, // animation duration
+        once: true,     // only run once when scrolled into view
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
